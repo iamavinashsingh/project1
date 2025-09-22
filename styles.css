@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1e1e1e;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+main{
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto;
+}
+/*  +++++++++++++++++++++++++++             SIDEBAR         ++++++++++++++++++++++++++++++++++++ */
+.sidebar{
+    height: 90vh;
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    border: 1px solid #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/*  ==============================               Profile      ============================== */
+#profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+#profile img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+
+#profile h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+#profile p{
+    background-color: #1e1e1e;
+    padding: 5px 15px;
+    color: #FFBF00;
+    border: 1px solid #3a3a3a;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*  ==============================               Information      ============================== */
+
+#info{
+    border-top: 2px solid #3a3a3a;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding: auto;
+}
+
+.label{
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+.value{
+    color: #e0e0e0;
+    text-decoration: none;
+    position: relative; 
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.value:hover{
+    color: #FFBF00;
+}
+.value::after{
+    height: 1px;
+    width: 0;
+    content: '';
+    transition: all .5s ease-in-out;
+}
+.value:hover::after{
+    width: 100%;
+    background-color: #FFBF00;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+
+
+.info-item{
+    font-size: 0.9rem;
+}
+#email,#phone{
+    margin-bottom: 15px;
+}
+
+/*  ==============================               Socials      ============================== */
+
+#socials{
+    border-top: 2px solid #3a3a3a;
+    margin-top: 30px;
+    padding: 20px 10px;
+    text-align: center;
+}
+#socials img{
+    height: 24px;
+    width: 24px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.5s ease;
+}
+
+#socials img:hover{
+    filter: brightness(0) saturate(100%) invert(61%) sepia(97%) saturate(665%) hue-rotate(1deg) brightness(106%) contrast(105%);
+}
+
+/*  +++++++++++++++++++++++++++              MAIN CONTENT         ++++++++++++++++++++++++++++++++++++ */
+.main-content{
+    height: 90vh;
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    border: 1px solid #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/* =================================       Navigation                ============================ */
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #3a3a3a;
+    padding-bottom: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;    
+}
+
+nav a::after{
+    height: 1px;
+    width: 0;
+    content: '';
+    transition: all .5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+    background-color: #FFBF00;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.active, nav a:hover{
+    color: #FFBF00;
+}
+
+/* =============================       About         =====================================   */
+.heading{
+    color: #e0e0e0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.content{
+    text-align: justify;
+    color: #a0a0a0;
+}
+
+#about{
+    margin-bottom: 40px;
+}
